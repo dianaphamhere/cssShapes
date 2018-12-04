@@ -1,6 +1,6 @@
 * {
 	padding: 0;
-	margin: 0;
+	margin: 10px;
 }
 
 #wrapper {
@@ -22,7 +22,7 @@
 
 #container div {
 	display: block;
-	margin: 10px;
+	margin: 20px;
 }
 
 #square {
@@ -112,3 +112,81 @@
 	border-left: 100px solid transparent;
 }
 
+#curvedarrow {
+	position: relative;
+	width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-right: 9px solid black;
+	transform: rotate(10deg);
+}
+
+#curvedarrow:after {
+	content: "";
+	position: absolute;
+	border: 0 solid transparent;
+	border-top: 3px solid black;
+	border-radius: 20px 0 0 0;
+	top: -12px;
+	left: -9px;
+	width: 12px;
+	height: 12px;
+	transform: rotate(45deg);
+}
+
+#trapezoid {
+	border-bottom: 100px solid black;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 100px;
+}
+
+#parallelogram {
+	width: 150px;
+	height: 100px;
+	transform: skew(20deg);
+	background: black;
+}
+
+#star-six {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid black;
+	position: relative;
+}
+
+#star-six:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid black;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}
+
+#fleamarkettriforceforboyfran {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid black;
+	position: absolute;
+}
+
+#fleamarkettriforceforboyfran:after {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 60px solid yellow;
+	position: absolute;
+	content: "";
+	top: 40px;
+	left: -20px;
+}
