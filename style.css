@@ -428,9 +428,70 @@
 	border-top: 70px solid black;
 }
 
+#diamond-narrow {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 70px solid black;
+	position: relative;
+	top: 475px;
+}
 
+#diamond-narrow:after {
+	content: "";
+	position: absolute;
+	left: -50px;
+	top: 70px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid black;
+}
 
+#cut-diamond {
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+	border-width: 0 25px 25px 25px;
+	height: 0;
+	width: 50px;
+	box-sizing: content-box;
+	position: relative;
+	margin: 20px 0 50px 0;
+	top: 550px;
+}
 
+#cut-diamond:after {
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: -25px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+	border-width: 70px 50px 0 50px;
+}
 
+#egg {
+	position: relative;
+	width: 126px;
+	height: 180px;
+	background-color: black;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	top: 600px;
+}
 
-
+#pacman {
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border-right: 60px solid transparent;
+	border-top: 60px solid black;
+	border-left: 60px solid black;
+	border-bottom: 60px solid black;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	top: 650px;
+}
